@@ -1,6 +1,6 @@
 <header class="categories-header">
     <a href="<%=categories_path %>" ><img src="/images/arrow_back.png" alt="" class="arrow-back"/></a>
-    <h2 class="big-title">NEW TRANsACTION</h2>
+    <h2 class="big-title">NEW TRANSACTION</h2>
 </header>
 
 <%= form_with model: @entity, url: category_transactions_path, method: :post, data: { turbo: false } do |form| %>

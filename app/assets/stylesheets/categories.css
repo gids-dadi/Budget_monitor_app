@@ -41,7 +41,7 @@
   color: white;
   border-radius: 15px;
   background-color: #3778c2;
-  margin: 60px 16px;
+  margin-right: 46%;
   position: absolute;
   right: 0;
 }
@@ -84,7 +84,7 @@
 
 .gift-amount-total {
   position: absolute;
-  right: 16px;
+  right: 420px;
   color: #212429;
   font-weight: 500;
   font-size: 19px;
