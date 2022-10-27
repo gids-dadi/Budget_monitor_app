@@ -3,4 +3,5 @@ class Group < ApplicationRecord
   has_many :entities, foreign_key: 'group_id', dependent: :delete_all
 
   validates :name, presence: true, length: {in: 3..200}
+  validates :icon, presence: true
 end
