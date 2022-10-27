@@ -25,8 +25,8 @@ To get a local copy up and running follow these simple example steps.
   - Copy this link `https://github.com/gids_dadi/Budget-monitor`.
   - Get the directory that you want to clone the repository.
   - Open the command prompt in this directory.
-  - Write `git clone https://github.com/gids_dadi/Budget-monitor`.
-  - Go to the repository folder in your command prompt `cd Budget-monitor`.
+  - Write `git clone https://github.com/gids_dadi/Budget_monitor_app`.
+  - Go to the repository folder in your command prompt `cd Budget_monitor_app`.
 
 ### Install
   - run `bundle install` to install dependencies
@@ -38,6 +38,7 @@ To get a local copy up and running follow these simple example steps.
   - run `rspec` to run the tests.
 
 ### Deployment
+[View Project]: (https://vast-harbor-92034.herokuapp.com/)
 
 
 ### Video
