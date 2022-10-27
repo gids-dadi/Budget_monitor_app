@@ -1,0 +1,31 @@
+<header class="categories-header">
+    <a href="<%=categories_path %>" ><img src="/images/arrow_back.png" alt="" class="arrow-back"/></a>
+    <h2 class="big-title">NEW TRANsACTION</h2>
+</header>
+
+<%= form_with model: @entity, url: category_transactions_path, method: :post, data: { turbo: false } do |form| %>
+
+  <div class="field top-field">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'form-control', placeholder: 'jordan 3' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.number_field :amount, class: 'form-control', placeholder: '24' %>
+  </div>
+
+ <div class="select-category">
+  <span>select a category</span>
+   <%@categories.each do |category|%>
+    <div class="radio-btn">
+     <%= form.label :category, category.name, value: "345"  %>
+     <%= form.radio_button :category, category.id %>
+    </div> 
+   <%end%> 
+ </div>
+
+ <div class="actions">
+    <%= form.submit "Save" , class: 'login-btn'%>
+  </div>
+<% end %>

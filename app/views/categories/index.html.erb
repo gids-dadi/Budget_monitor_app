@@ -1,2 +1,32 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<header class="categories-header">
+<%= render "shared/hamburger"%>
+    <h2 class="big-title">CATEGORIES</h2>
+    <%= link_to "Logout",
+      destroy_user_session_path,
+      data: { turbo_method: :delete },
+      class: 'logout'
+    %>
+</header>
+
+
+<div class="categories index-category">
+  <% @groups.each do |category|%>
+   <a href="<%= category_path(category.id)%>">
+   
+     <div class="category">
+       <div class="icon-container">
+         <img src="<%=category.icon %>" alt="" class="category-icon">
+       </div>
+
+       <p class="category-name"><%=category.name %></p>
+       <p class="total-amount">Total amount: $<%=0 + category.total_amount.to_i%></p>
+       <p class="num-of-transactions">Transactions: <%=category.transactions_count%></p>
+     </div>
+   </a>
+  <% end %>
+</div>
+
+
+<div class="link-wrap">
+  <a href="<%=new_category_path %>" class="add-a-new-category">Add a new Category</a>
+</div>
