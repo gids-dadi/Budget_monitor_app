@@ -6,8 +6,8 @@ Rails.application.routes.draw do
     root 'categories#index', as: :authenticated_root
   end
 
- root 'home#index'
-  
+  root 'home#index'
+
   resources :categories, only: %i[index new show create destroy update edit] do
     resources :transactions, only: %i[index new show create destroy update edit]
   end

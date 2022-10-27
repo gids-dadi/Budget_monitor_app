@@ -10,9 +10,9 @@ class TransactionsController < ApplicationController
   end
 
   def create
-    @entity = Entity.new(name: params[:entity][:name], amount: params[:entity][:amount], user_id: current_user.id, group_id: params[:entity][:category])
+    @entity = Entity.new(name: params[:entity][:name], amount: params[:entity][:amount], user_id: current_user.id,
+                         group_id: params[:entity][:category])
 
     redirect_to category_transaction_path(params[:entity][:category], @entity.id) if @entity.save
   end
 end
-
