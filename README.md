@@ -18,30 +18,35 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-  - A web editor like Atom or Vscode
-  - Install ruby and rails
+- A web editor like Atom or Vscode
+- Install ruby and rails
 
 ### Setup
-  - Copy this link `https://github.com/gids_dadi/Budget-monitor`.
-  - Get the directory that you want to clone the repository.
-  - Open the command prompt in this directory.
-  - Write `git clone https://github.com/gids_dadi/Budget_monitor_app`.
-  - Go to the repository folder in your command prompt `cd Budget_monitor_app`.
+
+- Copy this link `https://github.com/gids_dadi/Budget-monitor`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone https://github.com/gids_dadi/Budget_monitor_app`.
+- Go to the repository folder in your command prompt `cd Budget_monitor_app`.
 
 ### Install
-  - run `bundle install` to install dependencies
+
+- run `bundle install` to install dependencies
 
 ### Usage
-  - run `rails s` to start the local server.
+
+- run `rails s` to start the local server.
 
 ### Run tests
-  - run `rspec` to run the tests.
+
+- run `rspec` to run the tests.
 
 ### Deployment
-View Project: 
 
+View Project:(https://budget-monitor-app.herokuapp.com/)
 
 ### Video
+
 Link to video: (https://www.loom.com/share/1650795fd6ab4fae844e626048a3bc2a)
 
 ## Author
@@ -63,6 +68,7 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
 - Microverse
 - Original design idea by Gregoire Vella
 - etc
