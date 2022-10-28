@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
   - run `rspec` to run the tests.
 
 ### Deployment
-View Project: (https://vast-harbor-92034.herokuapp.com/)
+View Project: 
 
 
 ### Video
