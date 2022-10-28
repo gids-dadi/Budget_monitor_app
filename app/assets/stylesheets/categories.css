@@ -1,0 +1,91 @@
+.category {
+  display: flex;
+  align-items: center;
+  margin: 12px 12px;
+  background-color: white;
+  box-shadow: 1px 1px 5px #434b5476;
+  position: relative;
+  text-decoration: none;
+  color: #434b5493;
+}
+
+.icon-container {
+  width: 70px;
+  height: 70px;
+  margin: 12px;
+  display: block;
+}
+
+.category-icon {
+  max-height: 70px;
+  max-width: 70px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.num-of-transactions {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  margin: 0;
+}
+
+.category-name {
+  text-decoration: none;
+}
+
+.add-a-new-category {
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+  background-color: #3778c2;
+  margin-right: 46%;
+  position: absolute;
+  right: 0;
+}
+
+.link-wrap {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+.categories {
+  margin-top: 16px;
+}
+
+.index-category {
+  margin-top: 100px;
+}
+
+.total-amount {
+  font-weight: 500;
+  color: #434b54;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.gift-credit {
+  width: 100%;
+  height: 55px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 0 5px #434b5476;
+}
+
+.gift-amount {
+  margin-left: 16px;
+  color: #434b5476;
+}
+
+.gift-amount-total {
+  position: absolute;
+  right: 420px;
+  color: #212429;
+  font-weight: 500;
+  font-size: 19px;
+}

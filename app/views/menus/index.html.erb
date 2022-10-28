@@ -1,0 +1,20 @@
+<div class="menu">
+  <div class="user-creadentials">
+    <div class="user-avatar-wrap">
+     <img src="https://icon-library.com/images/male-user-icon/male-user-icon-13.jpg" alt="" class="user-avatar">
+    </div>
+    <h6><%=current_user.name %></h6>
+  </div>
+  <div class="link_to">  
+    <img src="/images/category.png" alt="" class="icon-link"/>
+    <a href="<%=categories_path %>">Categories</a>
+  </div>  
+  <div class="link_to">  
+    <img src="/images/add_category.png" alt="" class="icon-link"/>
+    <a href="<%=new_category_path %>">Add Category</a>
+  </div>
+  <div class="link_to">  
+    <img src="/images/tranzaction.png" alt="" class="icon-link"/>
+    <a href="<%=new_category_transaction_path(2) %>">Add Transaction</a>
+  </div>
+</div>

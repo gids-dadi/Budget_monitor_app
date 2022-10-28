@@ -1,0 +1,32 @@
+<header class="categories-header">
+    <%= render "shared/hamburger"%>
+    <h2 class="big-title">DETAILS</h2>
+    <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: 'logout' %>
+</header>
+
+<div class="trans action-wrap">
+  <div class="Image-name-container">
+   <div class="icon-container">
+     <img src="<%=@category.icon %>" alt="" class="category-icon">
+   </div>
+   <h2 class="category-name tranz"><%=@entity.name %></h2>
+  </div>
+  <p class="text-lorem">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iure.
+    Obcaecati similique dolore repudiandae quod, odio, soluta dignissimos.
+  </p>
+  <div >
+     <p class="text-lorem tr">Tranzaction N°: <%=56472910 / @entity.id.to_i + @category.id.to_i %></p>
+     <div class="date-calender-icon">
+       <img src="data:image/png;base64,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"
+        alt="" class="calendar-icon">
+       <%=@entity.created_at%>
+     </div>      
+  </div>
+  <div class="total-payment">  
+  TOTAL PAYMENT
+  <p class="amount">
+      $<%= @entity.amount%>
+  </p>
+  </div>
+</div>

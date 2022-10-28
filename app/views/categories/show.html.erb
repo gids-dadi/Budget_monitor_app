@@ -1,0 +1,28 @@
+<header class="categories-header">
+<%= render "shared/hamburger"%>
+    <h2 class="big-title">TRANSACTIONS</h2>
+</header>
+
+<div class="gift-credit">
+  <p class="gift-amount">total amount</p>
+  <p class="gift-amount-total">$<%=0 + @group.total_amount.to_i%></p>
+</div>
+
+<div class="categories">
+  <% @transactions.each do |transaction|%>
+    <a href="<%=category_transaction_path(params[:id],transaction.id) %>">
+     <div class="category">
+       <div class="icon-container">
+         <img src="<%=@group.icon %>" alt="" class="category-icon">
+       </div>
+       <p class="category-name"><%=transaction.name %></p>
+       <p class="tranzaction-price">$<%=transaction.amount %></p>
+       <p class="tranzaction-date"><%=transaction.created_at.strftime("%FT%T") %></p>
+     </div>
+    </a>
+  <% end %>
+</div>
+
+<div class="link-wrap">
+  <a href="<%=new_category_transaction_path(params[:id]) %>" class="add-a-new-category">Add a new Transaction</a>
+</div>

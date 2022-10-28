@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'menus/index'
+  devise_for :users
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  authenticated :user do
+    root 'categories#index', as: :authenticated_root
+  end
+
+  root 'home#index'
+
+  resources :categories, only: %i[index new show create destroy update edit] do
+    resources :transactions, only: %i[index new show create destroy update edit]
+  end
+  resources :menus
 end

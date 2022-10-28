@@ -1,0 +1,89 @@
+.tranzaction-price {
+  font-weight: 700;
+  color: #434b54;
+  position: absolute;
+  right: 20px;
+}
+
+.tranzaction-date {
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
+  left: 90px;
+  font-size: 12px;
+}
+
+.tranzaction-wrap {
+  width: calc(100% - 32px);
+  margin: 80px 16px 16px 16px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #434b5481;
+  color: #434b54b9;
+}
+
+.Image-name-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-lorem {
+  margin: 0 24px 20px 24px;
+  border-bottom: 1px solid #434b5442;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+.tr {
+  border: none;
+  margin-bottom: 0;
+  text-align: center;
+  color: #434b54;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.tranz {
+  color: #434b54;
+}
+
+.calendar-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.date-calender-icon {
+  text-align: center;
+  margin: 0 24px 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #434b5442;
+}
+
+.total-payment {
+  display: flex;
+  align-items: center;
+  margin: 0 24px 24px 24px;
+  color: #434b54;
+  font-weight: 500;
+  position: relative;
+  padding: 20px;
+}
+
+.amount {
+  position: absolute;
+  right: 0;
+  color: #2b2e33;
+}
+
+.select-category {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.radio-btn {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border: 1px solid #434b5457;
+  border-radius: 4px;
+  background-color: #fff;
+}
