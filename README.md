@@ -42,7 +42,6 @@ To get a local copy up and running follow these simple example steps.
 - run `rspec` to run the tests.
 
 ### Deployment
-
 View Project:(https://budget-monitor-app.herokuapp.com/)
 
 ### Video
