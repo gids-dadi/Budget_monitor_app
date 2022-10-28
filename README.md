@@ -42,12 +42,12 @@ To get a local copy up and running follow these simple example steps.
 - run `rspec` to run the tests.
 
 ### Deployment
+  - [Click here to see the live demo](https://stormy-shelf-54992.herokuapp.com/)
 
-View Project:(https://stormy-shelf-54992.herokuapp.com/)
 
 ### Video
 
-Link to video: (https://www.loom.com/share/1650795fd6ab4fae844e626048a3bc2a)
+- [Link to video](https://www.loom.com/share/1650795fd6ab4fae844e626048a3bc2a)
 
 ## Author
 
